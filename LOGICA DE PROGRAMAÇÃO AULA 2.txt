@@ -1,0 +1,144 @@
+Python...
+
+print("Sistema de comunicação")
+nome = input("Digite o seu nome:")
+print("Bom dia ", nome)
+
+print("Sistema de comunicação")
+nome = input("Digite o seu nome:")
+print("Bom dia ", nome)
+print(type(nome))
+
+numero1 = input("digite um numero:")
+numero2 = input("digite outro numero")
+print(numero1 + numero2)
+
+
+Somar numeros
+numero1 = int(input("digite um numero:"))
+numero2 = int(input("digite outro numero"))
+print(numero1 + numero2),
+
+
+numero1 = float(input("digite um numero:"))
+numero2 = float(input("digite outro numero"))
+print(numero1 + numero2)
+
+data1 = int( input("digite o ano atual"))
+data2 = int(input("digite o seu ano"))
+print(data1 - data2)
+
+-- codigo mais limpo!
+anoNascimento = int( input("digite o ano de nascimento:"))
+
+Ctrl +D (duplica a linha)
+
+numero1 = 10
+numero2 = 3
+print("Operações Aritméticas")
+print("adição", numero1+numero2)
+print("Subtração", numero1-numero2)
+print("multiplicação", numero1*numero2)
+print("divisão", numero1/numero2)
+print("divisão Inteira", numero1//numero2)
+print("exponenciação", numero1**numero2)
+print("módulo", numero1%numero2)
+
+
+Exponenciação
+print((7**2)+(3/2))
+print((2-(1/2))**(1/2))
+print(((5/3)+(3*2))/2)
+
+numero = float(input('Digite um numero:'))
+print("adição", numero + 10)
+print("divisão", numero / 2)
+print("elevar", numero ** 3)
+print("módulo", numero / 3)
+
+
+Ordem de resolução
+# 
+# ()
+# **
+# * // / %
+# 
+# + - 
+print(2023 - anoNascimento)
+
+
+#Crie um programa que receba 2 lados de um retângulo, e ao final,
+#informe: Qual a area total, qual o perimetro total.
+
+# lado1 = float(input("digite um lado: "))
+# lado2 = float(input("digite outro lado: "))
+#
+# print("Area:", lado2*lado1)
+# # print("Perimetro:", 2*(lado2+lado1))
+
+#crie um programa que calcule a hipotenusa de um triangulo retangulo.
+
+# lado1 = float(input("digite um lado: "))
+# lado2 = float(input("digite outro lado: "))
+# print("Hipotenusa:", (lado2**2+lado1**2)**0.5)
+
+#Crie um programa que receba umm valor em minutos e retornar em horas:
+# Exemplo 100 minutos ----------1h40.
+
+minutos = 100
+horas = str(minutos //60)
+novo_minutos: = str(minutos % 60)
+
+print(horas+'h'+novo_minutos)
+
+
+
+
+
+-----------------------------------------------------------
+# Operadores logicos
+# <, >, >=, <=, ==, !=, not
+
+# print(3>1)
+
+# idade = 38
+#
+# if idade >= 18:
+#     print("maior de idade")
+# else:
+#     print('menor de idade')
+
+# Crie um programa que receba 2 lados e classifique em quadrado e retangulo
+
+# lado1 = int(input('digite um lado: '))
+# lado2 = int(input('digite outro lado: '))
+#
+# if lado1 == lado2:
+#     print('quadrado')
+# else:
+#     print('retangulo')
+
+
+# nome ='Jonathan'
+# print(len(nome))
+# print(nome.upper())
+# print(nome.lower())
+
+# Crie um programa que receba um nome e diz se está maiusculo ou não
+
+# Crie um programa que classifique o tamanho de nome entre pequeno e grande
+# pequeno: até 7 caracteres
+# grande acima de 7 caracteres
+
+nome = input('digite um nome: ')
+
+
+if nome == nome.upper:
+    print('Maiusculo')
+else:
+    print('Não Maiusculo')
+
+if len(nome) < 7:
+    print('pequeno')
+else:
+    print('grande')
