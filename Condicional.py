@@ -42,3 +42,5 @@ if num_caract < 6:
      print('grande')
 else:
     print('gigante')
+
+----------------------------------------------
