@@ -6,8 +6,8 @@
 # mostrar um terço
 
 
-numero = float(input('Digite um numero:'))
-print("adição", numero + 10)
-print("divisão", numero / 2)
-print("elevar", numero ** 3)
-print("módulo", numero / 3)
+# numero = float(input('Digite um numero:'))
+# print("adição", numero + 10)
+# print("divisão", numero / 2)
+# print("elevar", numero ** 3)
+# print("módulo", numero / 3)

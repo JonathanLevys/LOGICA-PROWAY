@@ -16,8 +16,8 @@
 #Crie um programa que receba umm valor em minutos e retornar em horas:
 # Exemplo 100 minutos ----------1h40.
 
-minutos = 100
-horas = str(minutos //60)
-novo_minutos: = str(minutos % 60)
-
-print(horas+'h'+novo_minutos)
+# minutos = 100
+# horas = str(minutos //60)
+# novo_minutos: = str(minutos % 60)
+#
+# print(horas+'h'+novo_minutos)
