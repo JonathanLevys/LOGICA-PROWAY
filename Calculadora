@@ -1,0 +1,22 @@
+numero1 = 0 #Declarar a primeira variável.
+numero2 = 0 #Declarar a segunda variável.
+resultado = 0 #Declarar a terceira variável para armazenar o resultado da operação.
+operacao = '' #Declarar a quarta variável como string vazia.
+
+while True: #Loop infinito
+    numero1 = int(input('Digite o numero 1: '))
+    operacao =input('Digite a operação: ')
+    numero2 = int(input('Digite o numero 2: '))
+
+    if operacao == '+':
+        resultado = numero1 + numero2
+    elif operacao == '-':
+        resultado = numero1 - numero2
+    elif operacao == '*':
+        resultado = numero1 * numero2
+    elif operacao == '/':
+        resultado = numero1 / numero2
+    else:
+        resultado = 'Operação invalida'
+
+    print(str(numero1) + ' ' + str(operacao) + ' ' + str(numero2) + ' = ' + str(resultado))
