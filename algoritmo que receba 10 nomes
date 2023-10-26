@@ -1,0 +1,81 @@
+# Crie  um algoritmo que receba 10 nomes:
+# Ao final, informar:
+#     Quantos nomes tem mais de 5 letras
+#     Quantos tem até 5 letras
+#     Quantos nomes começam com vogal
+#     Quantos nomes começam com consoante
+#     Qual o nome mais curto
+#     Qual o nome mais longo
+#     Caso tenha mais de 1 nome para os 2 itens acima, mostrar
+#     todos os nomes que atendem
+#
+# adilson
+# carlos
+# alexandre
+# tamiris
+# edeslon
+# gilvaniro
+# jovilson
+# adriana
+# raul
+# raí
+#
+# até 5 letras: 2
+# acima de 5: 8
+# começa com vogal: 4
+# começa com consoante: 6
+# nome mais curto: raí
+# nome mais longo: alexandre, gilvaniro
+
+
+# criação de variáveis
+menos_cinco_caracteres = 0
+comeca_com_vogal = 0
+menor_nome = ''
+maior_nome = ''
+tam_maior_nome = 0
+tam_menor_nome = 0
+
+for i in range(10):
+    nome = input('Nome: ')
+
+    if i == 0:
+        menor_nome = nome
+        tam_maior_nome = len(nome)
+        tam_menor_nome = len(nome)
+
+    # ate 5 caracteres
+    if len(nome) <= 5:
+        menos_cinco_caracteres += 1
+
+    # começa com vogal
+    if nome[0] in 'aeiou':
+        comeca_com_vogal += 1
+
+    # atribuir maior nome
+    if len(nome) > tam_maior_nome:
+        maior_nome = nome
+        tam_maior_nome = len(nome)
+
+    # atribuir menor nome
+    if len(nome) < tam_menor_nome:
+        menor_nome = nome
+        tam_menor_nome = len(nome)
+
+    # atribuir maior nome
+    if len(nome) == tam_maior_nome and nome != maior_nome:
+        maior_nome += ' '+nome
+
+    if len(nome) == tam_menor_nome and nome != menor_nome:
+        menor_nome += ' '+nome
+
+print("Até 5 caracteres", menos_cinco_caracteres)
+print("Acima de 5 caracteres:", 10-menos_cinco_caracteres)
+print("Começa com Vogal:", comeca_com_vogal)
+print("Começa com Consoante:", 10-comeca_com_vogal)
+print("Maior nome", maior_nome)
+print("Menor nome", menor_nome)
+
+
+
+
